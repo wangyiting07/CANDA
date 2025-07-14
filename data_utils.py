@@ -44,7 +44,7 @@ def loadSEEDIV(path,si, modality):
     train_label = []
     test_data = []
     test_label = []
-    for i in range(1,24):
+    for i in range(1,25): # there was a bug here iterating from 1 to 24. But it should not influence the result significantly. 
         if modality == 'EEG':
             filename = 'eeg_de_{}.npy'.format(i)
         elif modality == "Eye":
